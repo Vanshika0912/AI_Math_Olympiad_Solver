@@ -1,0 +1,16 @@
+# ML Core
+pandas
+numpy
+scikit-learn
+torch
+joblib
+pyyaml
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Visualization
+matplotlib
+seaborn
