@@ -1,0 +1,88 @@
+
+# ============================================================
+# AI Math Olympiad Solver — Central Configuration
+# ============================================================
+
+project:
+  name: AI_Math_Olympiad_Solver
+  version: "1.0.0"
+  description: >
+    Production-ready ML pipeline that classifies and solves
+    Math Olympiad problems using both classical and deep learning models.
+
+paths:
+  artifacts_dir: artifacts
+  data_dir: artifacts/data
+  models_dir: artifacts/models
+  plots_dir: artifacts/plots
+  logs_dir: logs
+  raw_data_path: artifacts/data/raw_dataset.csv
+  processed_data_path: artifacts/data/processed_dataset.csv
+  train_data_path: artifacts/data/train.csv
+  test_data_path: artifacts/data/test.csv
+
+data:
+  source_path: data/math_olympiad_dataset.csv
+  target_column: category
+  text_column: problem
+  test_size: 0.2
+  random_state: 42
+  min_text_length: 5
+
+preprocessing:
+  max_features: 5000
+  ngram_range: [1, 2]
+  min_df: 1
+  max_df: 0.95
+  sublinear_tf: true
+
+traditional_model:
+  name: RandomForestClassifier
+  params:
+    n_estimators: 200
+    max_depth: 20
+    min_samples_split: 5
+    min_samples_leaf: 2
+    random_state: 42
+    n_jobs: -1
+
+svm_model:
+  name: LinearSVC
+  params:
+    C: 1.0
+    max_iter: 2000
+    random_state: 42
+
+deep_learning:
+  embedding_dim: 128
+  hidden_dims: [256, 128, 64]
+  dropout: 0.3
+  learning_rate: 0.001
+  epochs: 30
+  batch_size: 32
+  early_stopping_patience: 5
+  weight_decay: 1.0e-4
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+  average: weighted
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+  workers: 4
+  title: "AI Math Olympiad Solver API"
+  version: "1.0.0"
+  description: >
+    A production-ready REST API for classifying and solving
+    Math Olympiad problems using ML + Deep Learning models.
+
+logging:
+  level: INFO
+  format: "%(asctime)s — %(name)s — %(levelname)s — %(message)s"
+  log_file: logs/app.log

@@ -1,0 +1,72 @@
+problem,category,solution_hint
+"Find all prime numbers p such that p^2 + 2 is also prime.",Number Theory,Check p=3 gives 11 which is prime; show others fail mod 3.
+"Prove that for any integer n, n^3 - n is divisible by 6.",Number Theory,Factor as n(n-1)(n+1) — product of 3 consecutive integers.
+"If p and q are primes and p + q = 100, find all possible pairs (p, q).",Number Theory,One must be 2 since sum is even; check 2+98 (not prime) then 97+3 etc.
+"Show that there are infinitely many primes of the form 4k+3.",Number Theory,Adapt Euclid's proof assuming finitely many and derive contradiction.
+"Find all integers n such that n^2 + n + 41 is not prime.",Number Theory,The expression fails when n is a multiple of 41.
+"Prove that sqrt(2) is irrational.",Number Theory,Assume p/q in lowest terms; derive contradiction via parity argument.
+"How many trailing zeros does 100! have?",Number Theory,Count factors of 5: floor(100/5)+floor(100/25)=24.
+"Find all solutions to x^2 ≡ -1 (mod p) for prime p.",Number Theory,Solutions exist iff p=2 or p≡1 mod 4.
+"Prove that gcd(a,b)*lcm(a,b) = a*b.",Number Theory,Express via prime factorisation and use min/max exponent rules.
+"Show that every even integer > 2 can be written as sum of two primes (Goldbach for small cases).",Number Theory,Verify for small even numbers by enumeration.
+"For triangle ABC, prove that the sum of angles equals 180 degrees.",Geometry,Draw line through A parallel to BC and use alternate interior angles.
+"In a right triangle with legs a and b and hypotenuse c, prove a^2 + b^2 = c^2.",Geometry,Use area method or similar triangles from altitude to hypotenuse.
+"Prove that the three altitudes of a triangle are concurrent.",Geometry,Use the fact that orthocentre exists via Ceva's theorem.
+"Find the area of a regular hexagon with side length s.",Geometry,Divide into 6 equilateral triangles each with area (sqrt(3)/4)s^2.
+"Prove that opposite angles of a cyclic quadrilateral sum to 180 degrees.",Geometry,Both angles subtend arcs that together form the full circle.
+"In circle with centre O, prove that the angle at centre is twice the angle at circumference.",Geometry,Draw radius to the chord and use isoceles triangle properties.
+"Show that the medians of a triangle intersect at the centroid dividing each in ratio 2:1.",Geometry,Use vectors with centroid at (A+B+C)/3.
+"Find the radius of the inscribed circle of a triangle with sides 3, 4, 5.",Geometry,r = Area/s where s is semi-perimeter; Area=6, s=6, so r=1.
+"Prove that in any triangle, the longest side is opposite the largest angle.",Geometry,Use the law of sines: a/sin(A) = 2R.
+"Two circles intersect at points P and Q. Prove PQ is perpendicular to the line of centres.",Geometry,Centres and intersection points form a kite; diagonals of kite are perpendicular.
+"Find the sum of the infinite geometric series 1 + 1/2 + 1/4 + 1/8 + ...",Algebra,Use formula S = a/(1-r) with a=1, r=1/2 giving S=2.
+"Solve: x^4 - 5x^2 + 6 = 0.",Algebra,Let y=x^2; solve y^2-5y+6=0 giving y=2 or y=3.
+"If a + b + c = 0, prove that a^3 + b^3 + c^3 = 3abc.",Algebra,Use the identity a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca).
+"Find all real solutions to |x - 3| + |x + 2| = 7.",Algebra,Consider three cases: x<-2, -2≤x<3, x≥3.
+"Prove the AM-GM inequality: (a+b)/2 ≥ sqrt(ab) for non-negative a,b.",Algebra,(sqrt(a)-sqrt(b))^2 ≥ 0 expands to give the result.
+"For what values of k does kx^2 + 6x + k = 0 have two distinct real roots?",Algebra,Discriminant 36-4k^2 > 0 gives -3 < k < 3 (k≠0).
+"Simplify: (x^2-1)/(x^2-x) for x≠0,1.",Algebra,Factor numerator as (x-1)(x+1) and denominator as x(x-1) to get (x+1)/x.
+"If f(x) = 2x + 3 and g(x) = x^2, find f(g(x)) and g(f(x)).",Algebra,f(g(x))=2x^2+3 and g(f(x))=(2x+3)^2=4x^2+12x+9.
+"Solve the system: 2x + 3y = 12, 4x - y = 5.",Algebra,From second: y=4x-5; substitute: 2x+3(4x-5)=12 giving x=27/14.
+"Prove that the sum of roots of ax^2+bx+c=0 is -b/a.",Algebra,If roots are r1,r2 then (x-r1)(x-r2)=x^2-(r1+r2)x+r1*r2; compare with x^2+bx/a+c/a.
+"In how many ways can 5 people sit in a row?",Combinatorics,5! = 120.
+"How many subsets does a set with n elements have?",Combinatorics,Each element is either in or out: 2^n subsets.
+"Find the number of ways to choose 3 items from 10 without repetition.",Combinatorics,C(10,3) = 10!/(3!*7!) = 120.
+"Prove Pascal's identity: C(n,k) = C(n-1,k-1) + C(n-1,k).",Combinatorics,Count directly: either the new element is chosen or not.
+"How many anagrams does the word MISSISSIPPI have?",Combinatorics,11!/(4!*4!*2!*1!) = 34650.
+"In how many ways can 3 boys and 3 girls sit alternately in a row?",Combinatorics,3! ways for boys * 3! for girls * 2 (who starts) = 72.
+"Prove that C(2n,n) is divisible by n+1.",Combinatorics,This is the Catalan number; use ballot problem argument.
+"Find the coefficient of x^3 in the expansion of (2x+3)^5.",Combinatorics,C(5,3)*(2x)^3*3^2 = 10*8*9*x^3 = 720x^3.
+"How many 4-digit numbers have digits summing to 10?",Combinatorics,Use stars and bars with constraints on leading digit.
+"In a class of 30 students, find the probability that no two share a birthday.",Combinatorics,365*364*...*336 / 365^30 (birthday problem setup).
+"Find all positive integer solutions to x + y + z = 10.",Combinatorics,Stars and bars: C(9,2) = 36 solutions.
+"Find the sum of the first n natural numbers.",Series & Sequences,S = n(n+1)/2 proved by pairing or induction.
+"Prove by induction that 1^2 + 2^2 + ... + n^2 = n(n+1)(2n+1)/6.",Series & Sequences,Base case n=1; assume true for k; show for k+1.
+"Find the 100th term of the arithmetic sequence 3, 7, 11, 15, ...",Series & Sequences,a_n = 3 + (n-1)*4; a_100 = 399.
+"Find the sum of the first 20 terms of the geometric sequence 2, 6, 18, ...",Series & Sequences,S = 2*(3^20 - 1)/(3-1) = 3^20 - 1.
+"Determine if the series sum(1/n^2) converges.",Series & Sequences,Yes; compare with integral 1/x^2 dx or use Basel problem result pi^2/6.
+"Find the general term of the Fibonacci sequence.",Series & Sequences,Use Binet's formula: F_n = (phi^n - psi^n)/sqrt(5).
+"Sum the series: 1 + 2r + 3r^2 + 4r^3 + ... for |r|<1.",Series & Sequences,Differentiate geometric series formula to get 1/(1-r)^2.
+"Show that the harmonic series 1 + 1/2 + 1/3 + ... diverges.",Series & Sequences,Group terms: 1/3+1/4>1/2, 1/5+...+1/8>1/2, etc.; sum unbounded.
+"Find the limit: lim(n→∞) (1 + 1/n)^n.",Series & Sequences,This is the definition of e ≈ 2.71828.
+"Determine the radius of convergence of sum(x^n/n!).",Series & Sequences,Ratio test: |x_{n+1}/x_n| = |x|/(n+1) → 0; radius = ∞.
+"If P(A) = 0.4 and P(B) = 0.3 and A,B independent, find P(A∪B).",Probability,P(A∪B)=P(A)+P(B)-P(A∩B)=0.4+0.3-0.12=0.58.
+"A fair die is rolled twice. Find P(sum = 7).",Probability,Favourable pairs: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6/36 = 1/6.
+"Find E[X] for X ~ Binomial(n=10, p=0.5).",Probability,E[X] = np = 10*0.5 = 5.
+"What is the probability that a randomly chosen integer is divisible by 3 or 5?",Probability,By inclusion-exclusion: 1/3 + 1/5 - 1/15 = 7/15.
+"In a bag with 3 red and 5 blue balls, find P(2 red | draw 3 without replacement).",Probability,C(3,2)*C(5,1)/C(8,3) = 3*5/56 = 15/56.
+"State and apply Bayes' theorem to a medical test with 99% accuracy.",Probability,P(disease|+) = P(+|disease)*P(disease)/P(+); base rate matters heavily.
+"Find the variance of a fair six-sided die.",Probability,E[X]=3.5; E[X^2]=(1+4+9+16+25+36)/6=91/6; Var=91/6-49/4=35/12.
+"Two cards are drawn without replacement from a deck. Find P(both aces).",Probability,4/52 * 3/51 = 12/2652 = 1/221.
+"In the Monty Hall problem, should you switch?",Probability,Yes. Switching gives 2/3 probability; staying gives 1/3.
+"Find the probability that in a group of 23 people, two share a birthday.",Probability,1 - 365!/((365-23)!*365^23) ≈ 0.5073; slightly over 50%.
+"Evaluate the integral of x^2 from 0 to 3.",Calculus,∫x^2 dx = x^3/3; [0 to 3] = 27/3 - 0 = 9.
+"Find the derivative of f(x) = x^3 sin(x).",Calculus,Product rule: f'(x) = 3x^2 sin(x) + x^3 cos(x).
+"Find all critical points of f(x) = x^3 - 3x + 2.",Calculus,f'(x)=3x^2-3=0 gives x=±1; classify via second derivative.
+"Compute lim(x→0) sin(x)/x.",Calculus,The limit equals 1 by L'Hôpital or geometric squeeze theorem.
+"Find the area between y=x^2 and y=x from x=0 to x=1.",Calculus,∫(x-x^2)dx from 0 to 1 = 1/2 - 1/3 = 1/6.
+"Solve the ODE dy/dx = 2xy with y(0)=1.",Calculus,Separate variables: dy/y=2x dx; ln|y|=x^2+C; y=e^(x^2).
+"Find the maximum value of f(x) = -x^2 + 4x - 1.",Calculus,Complete the square or use vertex formula: x=2, f(2)=3.
+"Compute the integral of 1/(1+x^2) from -∞ to ∞.",Calculus,Equals arctan(x) from -∞ to ∞ = π/2-(-π/2) = π.
+"Use the chain rule to differentiate f(x) = sin(x^2).",Calculus,f'(x) = cos(x^2) * 2x = 2x cos(x^2).
+"Find the Taylor series of e^x about x=0.",Calculus,e^x = sum(x^n/n!, n=0 to ∞) = 1 + x + x^2/2! + x^3/3! + ...
