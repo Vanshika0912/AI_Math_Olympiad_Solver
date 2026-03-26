@@ -107,7 +107,7 @@ AI_Math_Olympiad_Solver/
 ### 1. Setup
 
 ```bash
-git clone https://github.com/yourusername/AI_Math_Olympiad_Solver.git
+git clone https://github.com/Vanshika0912/AI_Math_Olympiad_Solver.git
 cd AI_Math_Olympiad_Solver
 
 python -m venv venv
